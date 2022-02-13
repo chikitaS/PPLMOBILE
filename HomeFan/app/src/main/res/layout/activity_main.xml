@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/SC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/SC"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/tombol"
+        android:layout_width="156dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SC" />
+
+    <Switch
+        android:id="@+id/lampu"
+        android:layout_width="135dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/L"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/S"
+        android:layout_width="52dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/S"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tombol" />
+
+    <ImageView
+        android:id="@+id/fanImage"
+        android:layout_width="249dp"
+        android:layout_height="191dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="171dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/speedBar"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/fan" />
+
+    <SeekBar
+        android:id="@+id/speedBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="232dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="58dp"
+        android:max="3"
+        android:progress="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/S"
+        app:layout_constraintTop_toBottomOf="@+id/tombol" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
